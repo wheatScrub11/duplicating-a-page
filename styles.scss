@@ -11,7 +11,7 @@
     background-color: #ffcb47;
     display: flex;
     align-items: center;
-    padding: 16px 250px;
+    padding: 8px 250px;
 
     .logo{
         color: #4a5043;
@@ -23,9 +23,23 @@
     .nav, ul, li, a{
         display: flex;
         color: #4A5043;
-        gap: 16px;
-
+        gap: 10px;
+        align-items: center;
     }
+
+    a{
+        padding: 0 1em;
+        height: 3em;
+    }
+
+    a:hover{
+        background-color: #ffffffb6;
+    }
+    a:focus{
+        text-decoration: underline #71756b;
+        color: #71756b;
+    }
+    
 }
 
 #main-section{
@@ -65,8 +79,13 @@
             background-color: #3b82f6;
             border: 0 solid #3b82f6;
             border-radius: .5em;
-            font-weight: 1000;
-            
+            font-weight: 1000;   
+        }
+        button:hover, :focus{
+            background-color: #1b72ff;
+        }
+        button:focus{
+            border: 1px solid white;
         }
     }
 
@@ -240,6 +259,9 @@ blockquote, cite, p, figcaption, strong{
                 color: white;
                 font-weight: 1000;
                 font-size: 30px;
+            }
+            button:hover, :focus{
+                background-color: #77aafc;
             }
         }
     }
