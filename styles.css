@@ -378,7 +378,7 @@ blockquote, cite, p, figcaption, strong {
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
-  margin-right: auto;
+  margin-right: 20px;
 }
 
 .fifth-section .s-var .circles-box .circles {
