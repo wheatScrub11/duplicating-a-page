@@ -478,8 +478,7 @@ blockquote, cite, p, figcaption, strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #202331;
-  padding: 5em 14em;
+  background-color: #14161f;
 }
 
 .fifth-section .fifth-section-holder {
@@ -488,6 +487,8 @@ blockquote, cite, p, figcaption, strong {
   width: 100%;
   padding: 0 2em;
   background-color: #2c3043;
+  z-index: 1;
+  margin: 5.6em 14em;
 }
 
 .fifth-section .s-var {
@@ -496,7 +497,6 @@ blockquote, cite, p, figcaption, strong {
   display: flex;
   height: 2em;
   width: 100%;
-  background-color: #2c3043;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -581,6 +581,122 @@ blockquote, cite, p, figcaption, strong {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+}
+
+.section-n6-holder {
+  position: absolute;
+  width: 100%;
+  opacity: 5%;
+}
+
+.section-n6 {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (100px)[4];
+      grid-template-rows: repeat(4, 100px);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 2em;
+      grid-template-areas: "one  one  two  two  two  three three three three three four four" "five  five  two  two  two  three three three three three six six" "seven  seven  eight  nine  nine  three three three three three ten ten" "eleven eleven eleven eleven eleven three three three three three twelve twelve";
+}
+
+.section-n6 .s-n6.box1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: one;
+  background-color: #c9316b;
+}
+
+.section-n6 .s-n6.box2 {
+  background-color: #ca319d;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: two;
+}
+
+.section-n6 .s-n6.box3 {
+  background-color: #ed6e62;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-area: three;
+}
+
+.section-n6 .s-n6.box4 {
+  background-color: #efc437;
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+}
+
+.section-n6 .s-n6.box5 {
+  background-color: #538c45;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: five;
+}
+
+.section-n6 .s-n6.box6 {
+  background-color: #267c87;
+  -ms-grid-row: 2;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: six;
+}
+
+.section-n6 .s-n6.box7 {
+  background-color: #799928;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: seven;
+}
+
+.section-n6 .s-n6.box8 {
+  background-color: #478755;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: eight;
+}
+
+.section-n6 .s-n6.box9 {
+  background-color: #30c9c2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: nine;
+}
+
+.section-n6 .s-n6.box10 {
+  background-color: #31c98f;
+  -ms-grid-row: 3;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: ten;
+}
+
+.section-n6 .s-n6.box11 {
+  background-color: #544079;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: eleven;
+}
+
+.section-n6 .s-n6.box12 {
+  background-color: #de212f;
+  -ms-grid-row: 4;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: twelve;
 }
 
 #footer {
