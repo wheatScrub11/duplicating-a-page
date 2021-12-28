@@ -269,6 +269,104 @@ blockquote, cite, p, figcaption, strong{
     }
 }
 
+.fifth-section{
+    display: flex;
+    background-color: #202331;
+    padding: 5em 14em;
+
+    .fifth-section-holder{
+        display: grid;
+        width: 100%;
+        padding: 0 2em;
+        background-color: #2c3043;
+    }
+
+
+
+    .s-var{
+        display: flex;
+        height: 2em;
+        width: 100%;
+        background-color: #2c3043;
+        align-items: center;
+        padding: .5em 0;
+
+        .circles-box{
+            display: flex;
+            gap: 5px;
+            margin-right: auto;
+            
+            .circles{
+                width: 12px;
+                height: 12px;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            .circles.c1{
+                background-color: #fc6057;
+            }
+            .circles.c2{
+                background-color: #fda061;
+            }
+            .circles.c3{
+                background-color: #1bc1a1;
+            }
+        }
+
+        .search{
+            padding: 0 .5em;
+            width: 93%;
+            background-color: #f8f9fb;
+            color: rgb(128, 128, 128);
+        }
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        //background-color: rebeccapurple;
+        padding: .5em 0 1.5em 0;
+        grid-auto-rows: minmax(50px, auto);
+
+
+    }
+
+    //Styling grid elements
+
+    .grid-container-child.one, .grid-container-child.two, .grid-container-child.three, .grid-container-child.four, .grid-container-child.five{
+
+    }
+    .grid-container-child.one{
+        background-color: #fda061;
+        grid-column: span 3;
+    }
+    .grid-container-child.two{
+        background-color: #01a787;
+        grid-column: 1;
+        grid-row: 2 / 4;
+    }
+    .grid-container-child.three{
+        background-color: #34daba;
+        grid-column: span 2;
+    }
+    .grid-container-child.four{
+        background-color: #fc6057;
+        grid-column: 2 / 2;
+        grid-row: 3;
+    }
+    .grid-container-child.five{
+        background-color: #fda061;
+        grid-column: 3 / 3;
+        align-self: stretch;
+    }
+    
+
+
+
+}
+
 #footer{
     background-color: #FFCB47;
     text-align: center;
